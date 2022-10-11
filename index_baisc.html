@@ -1,0 +1,695 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>The Economics of the Real Estate and Construction Industry</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="tweaks.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+					<section data-background-image="imgs/door.jpg" >
+
+					<h2 style="line-height: 0.8em;">Real Estate<span class="subtitle"><br />Economics / Values / Construction</span></h2>
+
+					<p style="font-size: 0.8em; margin-top: 1.4em;">Dr. Thies Lindenthal
+						<br /><a href="mailto:htl24@cam.ac.uk">htl24@cam.ac.uk</a>
+						<br /><a href="https://twitter.com/ThiesLindenthal">https://twitter.com/ThiesLindenthal</a>
+						<br />
+						<br />
+						13.9.2022</p>
+				</section>
+
+
+				<section data-markdown >
+					<textarea data-template>
+						## Key questions for today<span class="subtitle"><br/>(And hopefully many more from your side!)</span>
+
+						* Which factors determine the supply and demand of (commercial) real estate?
+						* How are rents and asset values determined?
+						* Is real estate a good investment?
+
+					</textarea>
+				</section>
+
+
+				<section data-markdown >
+					<textarea data-template>
+						## Four Quadrant Model<span class="subtitle"><br/>Fisher, DiPasquale and Wheaton (1992)</span>
+
+						<div class='figure'>
+							<img src="imgs/Fisher-DiPasquale-Wheaton-FDW-model.png", height=450>
+						</div>
+
+					</textarea>
+				</section>
+
+
+				<section data-markdown >
+					<textarea data-template>
+						## The Billion Dollar Question<span class="subtitle"><br/>How much has Work-from</span>
+
+						<div class='figure'>
+							<img src="imgs/Fisher-DiPasquale-Wheaton-FDW-model.png", height=450>
+						</div>
+
+					</textarea>
+				</section>
+
+
+
+			<section data-markdown data-background-image="imgs/hk.png">
+				<textarea data-template>
+				## <span class="transparent70">Determining Value</span><span class="subtitle transparent70"><br/>Three approaches&mdash;from fundamentally different angles.</span>
+
+				<ul>
+					<li class='transparent70'>1. Discounted cash flows</li>
+					<li><span class="transparent70">2. Comparables</span></li>
+					<li><span class="transparent70">3. Accounting based</span></li>
+				</ul>
+
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## 1. Discounted Cashflows <span class="subtitle"><br/>Value is sum of future cashflows, discounted back to today.</span>
+				`$$ V_0 = \sum^\infty_{t=1} \frac{CF_t}{(1+r_t)^t} $$`
+
+				* Easy! You probably have done something like this before.
+				* How should we model the cash flows?
+				* Which discount rate(s) to use?
+				* Real Estate pecularities?
+				</textarea>
+			</section>
+
+			<section data-markdown >-
+				<textarea data-template>
+				## From Cash Flows to Values<span class="subtitle"><br/>Basic valuation for equities: Dividend discount model / Gordon growth model</span>
+				* If we assume that CFs are an increasing perpetuity,
+					- and <emph>g</emph> is the long-run average growth rate and <emph>r</emph> is the required return for equity holders,
+				* then `$ \small V_0 = \sum^{\infty}_{t=1}D_t(1+r)^{-t} $`,
+				* which simplifies to `$ \small V = \frac{D_1}{r-g}$`.
+
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Are Cash flows smoothly increasing?<span class="subtitle"><br/></span>
+				* Bond-like characteristics
+					- Lease contracts: defined rent and defined maturity?
+				* Equity-like characteristics
+					- Perpetuity: must either estimate exit value or use a perpetuity formula
+					- Growth: income (and capital value) change over time
+				* Capital expenditures tend to be irregular and large
+				* Optionality
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Transaction costs <span class="subtitle"><br/>Large market frictions (at least for private real estate) </span>
+
+				* Round trip transaction costs as high as 7–8% for commercial RE (Collet, Lizieri & Ward, 2003)
+				* Incorporate direct transaction costs into cash flow predictions
+					- Marketing and search costs
+					- Legal and other professional fees
+					- Property taxes/stamp duties
+
+				* Indirect transaction costs
+					- Cannot readily trade in and out of property. Liquidity risk.
+					- Reflect in required rate of return for exit value
+
+			</textarea>
+			</section>
+
+			<section data-markdown >-
+				<textarea data-template>
+				## Denominator `$ \small k$` <span class="subtitle"><br/>$ \small V = \frac{D_1}{k} = \frac{D_1}{r-g} \Longrightarrow k = \frac{D_1}{V}$</span>
+				* The yield is observable (k = D<sub>1</sub>/P), but not constant in time (e.g., Amsterdam gross yields)
+				<img src="imgs/rent_price_amsterdam.png" height=300>
+				* Decompose k into required return and growth and model individually
+					- g might change over life of firm
+					- Re-investment at same rate not always possible (typically declining returns)
+				</textarea>
+			</section>
+
+
+			<section data-markdown >
+				<textarea data-template>
+				## Normative view on $k$<span class="subtitle"><br/>What might be the correct discount rate?</span>
+
+				* Discount rate reflects
+					- time value of money—reward for giving up capital,
+					- and compensation for risk.
+				* Fisher model of interest rates
+					- Interest (r) = Impatience + Anticipated Inflation + Risk
+					- r = Risk Free Rate (RFR) + Risk Premium (RP)
+					- RFR: From govenment debt?
+					- RP depends on the variability of economic and financial drivers and "price of risk"
+				* Real assets: depreciation?
+					- Account for depreciation in CF or r? Both possible.
+
+				</textarea>
+			</section>
+
+
+			<section data-markdown >
+			<textarea data-template>
+			## What is (or should be) R?<span class="subtitle"><br/>Decomposing yield <emph>(k)</emph> to back out required return <emph>(r)</emph>.</span>
+
+			<table style="font-size: 0.6em;">
+			<tr><td></td><td></td></tr>
+			<tr><td>k = r – g </td><td> r is required return, g = growth <br>(k is directly observable, R and g not!)</td></tr>
+			<tr><td>r = RFR + RP </td><td> Risk Free Rate + Risk Premium </td></tr>
+			<tr><td>RFR = RFR<sub>r</sub> + E(f) </td><td> real RFR, expected inflation </td></tr>
+			<tr><td>g = g<sub>r</sub> + E(f) </td><td> real Growth, expected inflation </td></tr>
+			<tr><td>k = RFR<sub>r</sub> + E(f) + RP – g<sub>r</sub> – E(f) </td><td></td></tr>
+			<tr><td>k = RFR<sub>r</sub> + RP - g<sub>r</sub> </td><td> and inflation cancels out</td></tr>
+			<tr><td>k = RFR<sub>r</sub> + RP – g<sub>r</sub> + d </td><td> depreciation of structures</td></tr>
+			<tr><td></td><td></td></tr>
+			</table>
+
+			* If we have realistic estimates for some but not all parameters, we can back out the market consensus for anything missing.
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Risk-free rate<span class="subtitle"><br/>Yields on 10-year US Treasury bonds, nominal and real.</span>
+
+				<div class="figure">
+					<iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=wTMj&width=670&height=475" scrolling="no" frameborder="0"style="overflow:hidden; width:670px; height:525px;" allowTransparency="true" loading="lazy"></iframe>
+				</div>
+
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## A bit longer?<span class="subtitle"><br/>UK and Dutch government bond yields. </span>
+				<img src="imgs/UK_NL_yields.png" height=450><br>
+				<p class="source">Source: Ambrose, Eichholtz, Lindenthal (2013); Eichholtz & Koedijk (1996); Barclays</p>
+
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Risk Premia<span class="subtitle"><br/>Equity RP are diverse in space and dynamic in time.</span>
+				<div class='figure'>
+				<p class='title'>Estimated Equity Risk Premia<p>
+				<p><img src="imgs/RP.png" height=380></p>
+				<p class="source">Source: <a href='https://press.princeton.edu/books/hardcover/9780691091945/triumph-of-the-optimists'>Dimson, E., P. Marsh & M. Staunton (2002)</a></p>
+				</div>
+
+				* If anything, real estate RP will be even more localised and volatile.
+
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Growth estimates<span class="subtitle"><br/>How high have historical growth rates really been?</span>
+				<div class='figure'>
+					<p class='title'>RRE returns (nominal), City of London</p>
+				<img src="shared-figures/longterm-returns/london/cre-london-nominal.svg" height=400>
+			</div>
+				Notes:
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Growth estimates<span class="subtitle"><br/>In real terms, all growth came from income. Negative capital gains!</span>
+				<div class='figure'>
+					<p class='title'>CRE returns (real), City of London</p>
+				<img src="shared-figures/longterm-returns/london/cre-london-real.svg" height=400>
+			</div>
+				Notes:
+				</textarea>
+			</section>
+
+
+			<section data-markdown >
+				<textarea data-template>
+						## Manhattan<span class="subtitle"><br/>120 years without an upward trend in commercial real estate prices?</span>
+
+						<div class='figure'>
+							<p class='title'>CRE Price Index (real), New York (1899–2022)</p>
+							<p><img src="shared-figures/longterm-returns/us/cre-manhattan.svg" height=400></p>
+							<p class="source">Sources: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6229.2009.00235.x">Wheaton, Baranski & Templeton (2009)</a>; MSCI/IPD; NCREIF</p>
+						</div>
+				</textarea>
+			</section>
+
+
+			<section data-markdown >
+				<textarea data-template>
+				## Growth US house prices?<span class="subtitle"><br/>100 years of flat house prices. Booms are relatively recent.</span>
+
+				<div class='figure'>
+					<p class='title'>US house price index (real), 1890–2022</p>
+				<img src="shared-figures/longterm-returns/us/case-shiller-hpi.svg" height=400>
+				<p class=source>Data: <a href='http://www.econ.yale.edu/~shiller/data.htm'>Robert Shiller</a></p>
+				</div>
+				</textarea>
+			</section>
+
+
+
+			<section data-markdown >
+				<textarea data-template>
+					## Norway?<span class="subtitle"><br/>In the long run... real prices are flat!</span>
+
+					* Norwegian real house prices, 1819-2003 (Eitrheim & Erlandsen, 2003)
+					<img src="imgs/norway.png" height=350>
+
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+					## Beijing?<span class="subtitle"><br/>No price gains</span>
+
+					* House prices,  Beijing. 1644&ndash;1840 (<a href="https://www.sciencedirect.com/science/article/abs/pii/S0014498313000132">Raff, Wachter & Yan, 2013</a>)
+					<img src="imgs/beijing.png" height=370>
+
+				</textarea>
+			</section>
+
+
+			<section data-markdown >
+				<textarea data-template>
+				## Netherlands?<span class="subtitle"><br/>In the very long run... real prices are flat!</span>
+
+				<div class="figure">
+					<p class="title">Amsterdam Property Prices, 1650–2005</p>
+					<p><img src="imgs/amsterdam.png" height=400></p>
+					<p class="source">Source: Eichholtz (1997)</p>
+				</div>
+				</textarea>
+			</section>
+
+			<section data-markdown data-background-image="imgs/herengracht1.jpg">
+				<textarea data-template>
+				## Prime location<span class="subtitle"><br/>In 1672—and today.</span>
+				<p class="source">Gerrit Adriaenszoon Berckheyde: Herengracht, Amsterdam, 1672</a>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+				</textarea>
+			</section>
+
+
+			<section data-markdown >
+				<textarea data-template>
+				## Low Growth in rents<span class="subtitle"><br/>Very modest long-term growth in real rents: &lt;1% per year.</span>
+				* Amsterdam, Paris, London, Brussels, Bruges, Ghent, Antwerp, 1500-2019
+				<img src="imgs/longtermrents.png" height=400>
+
+				<p class="source">Source: Eichholtz, Korevaar, Lindenthal (working paper)</p>
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Depreciation<span class="subtitle"><br/>More than just a constant factor.</span>
+
+				<div class="figure">
+					<p class="title">Depreciation in US Commercial &amp; Multi-Family Properties</p>
+					<p><img src="imgs/depreciation.png" height=380></p>
+					<p class='source'>Source: Bokhari &amp; Geltner (2016)</p>
+				</div>
+				</textarea>
+			</section>
+
+
+			<section data-markdown >
+				<textarea data-template>
+				## k &mdash; not constant!<span class="subtitle"><br/>Rent-price ratio (gross yield) for Amsterdam, 1650-2007</span>
+
+				<img src="imgs/rent_price_amsterdam.png" height=420>
+
+				</textarea>
+			</section>
+
+			</section>
+			<section data-markdown >
+				<textarea data-template>
+				## All in expectations!<span class="subtitle"><br/>Observed k depends on expectations of growth, RFR<sub>r</sub>, RP.</span>
+				* Dynamic Gordon growth model
+					- Prices are the discounted sum of rents,
+					- growth rate of rents and required return to housing can vary over time
+				* Three components of rent price ratio (in logs: `$\small l_t -p_t$`), all in expectations
+					- Interest rate (`$\small i$`)
+					- Risk premia (`$\small \pi$`)
+					- Changes in rents (`$\Delta l$`) <img src="imgs/bubbleformula.png">
+				* see e.g. Campbell et al. (2009), or Ambrose et al. (2013)
+				</textarea>
+			</section>
+
+			<section >
+				<h2>Expectations of $i$<span class="subtitle"><br/>BoE yield curves: Market consensus on yield and inflation.</span></h2>
+				<table>
+					<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+					<tr>
+						<td class="source">Yield</td>
+						<td class="source">Inflation</td>
+						<td class="source">Yield, real</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="https://www.bankofengland.co.uk/-/media/boe/images/statistics/yield-curves/uknom.gif" height="250">
+						</td>
+						<td>
+							<img src="https://www.bankofengland.co.uk/-/media/boe/images/statistics/yield-curves/ukinf.gif" height="250">
+						</td>
+						<td>
+							<img src="https://www.bankofengland.co.uk/-/media/boe/images/statistics/yield-curves/ukreal.gif" height="250">
+						</td>
+
+					</tr>
+					<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+				</table>
+			</section>
+
+
+			<section data-markdown >
+				<textarea data-template>
+				## Idiosyncratic Risk<span class="subtitle"><br/>Should idiosyncratic risk be reflected in the discount rate?</span>
+
+				* Idiosyncratic risk is big for RE investments (<a href="https://academic.oup.com/rfs/advance-article/doi/10.1093/rfs/hhab042/6222230">Eichholtz et al., RFS 2021</a>)
+				<img src="imgs/idiosyncratic_risk.png" height=250>
+
+				* Textbooks: Only systematic risk in discount rate!
+
+				* <a href="https://www.paulhdecaire.com/uploads/1/2/7/1/127144669/decairepaul_capitalbudgetingandidiosyncraticrisk_20200109_2.pdf">Décaire (2020)</a>: "on average, firms inflate their discount rate by 5 percentage points in response to an 18pp increase in idiosyncratic risk."
+
+				</textarea>
+			</section>
+
+
+			<section>
+			<section data-markdown >
+				<textarea data-template>
+					## Summing up<span class="subtitle"><br/>Valuation: DCF it is (in most cases). </span>
+
+					* Decompose yields: Forecast individual components (RFR, RP, g, &delta;) to arrive at discount rate.
+
+					* g is probably smaller than your first guess...
+
+					* RP is difficult to estimate. And volatile.
+
+					* &delta; needs more attention &ndash; not just an afterthought.
+
+					* Justify your assumptions, always. Sensitivity analysis?
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Discussion<span class="subtitle"><br/>London office market: Implied RFR, RP, growth, depreciation?</span>
+				* West End: "Prime yields remained unchanged at 3.50% across all lot lot sizes.
+				* City: "Prime yields softened towards the end of the quarter to stand at 4.00%." (JLL Market report, Q2 2022)
+				</textarea>
+			</section>
+		</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## 2: Valuation using comparables<span class="subtitle"><br/>Assumption: Value based on observed market outcomes.</span>
+
+				* Not normative: Assumes that the market values assets efficiently. Use comparable transactions to find value of property
+					- How many comparables are needed to eliminate deal-specific noise?
+					- Are comparables really comparable? Adjust for difference in time and quality?
+
+				<div class="figure">
+				<img src="imgs/gherkin.png" height=350>
+				</div>
+
+			</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## empirical models<span class="subtitle"><br/>Yields as a function of location, time and quality.</span>
+				* Empirical approach: regress yields against variety of explanatory variables
+					- Yield = 𝑓(location, time, property characteristics)
+				* Explanatory variables
+					- Time dummies (monthly/quarterly/…)
+					- Location controls (neighbourhood, region)
+					- Property characteristics: Tenants, amenities, vintage, maintenance levels, energy consumption...
+				* Fit model to property characteristics to estimate yield
+				* Trade-off: Number of observations vs. time and location focus
+				* Uncertainty: What is the “right” specification?
+				* Fundamental challenge: Is the market value the “true” value?
+					- Geltner & Goetzmann (2000): 7–15% noise in individual NCREIF transactions
+				</textarea>
+			</section>
+
+			<section data-markdown >
+				<textarea data-template>
+				## Repeat sales<span class="subtitle"><br>The best comparable: Earlier transactions of the same building.</span>
+				* Same location, assuming quality has not changed... What is the market trend?
+
+				<img src="imgs/repeats.png" height=350>
+				</textarea>
+			</section>
+
+				<section data-markdown >
+					<textarea data-template>
+					## Really different?<span class="subtitle"><br/>Or just two sides of the same coin?</span>
+					* DCF starts with asset-level cashflows—and then applies market-level discount rates
+					* The comparable approach sets off from market-level yields—and then uses comparables to find value of a single asset.
+					<div class="figure">
+						<img src="imgs/asset_market_loop.png" height="300">
+					</div>
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+					## Traditional valuation (I)<span class="subtitle"><br/>Can we reduce uncertainty by making fewer assumptions?</span>
+
+					* Both numerator and denominator are all in expectations—not certain!
+						- income growth, vacancies, capex make cash flow predictions difficult.
+						- discount rate: RFR + RP – g + d.
+
+					* Basic freehold valuation, based on income: V = Current Rent / ARY
+						- Current rent instead of uncertain future cash flows
+						- ARY or Cap Rate observed from comparables (trust the market!)
+						- Everything is in the yield—after all, it is the “All Risks” yield
+					* We <strong>know</strong> current rent and just have to get <strong>one</strong> parameter—ARY—right. This MUST be more reliable?
+
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+					## Traditional valuation (II)<span class="subtitle"><br/>"Term and Reversion"</span>
+
+					* Long lease contracts, with rent revisions at e.g. 3–5 year intervals
+					* Example: office building, last rent revision 1 year ago, next in 2 years
+						- passing (current) rent: 10,000. Rent grew by 5% last year, trend expected to continue...
+						- ARY, from newly let comparables: 4%
+					* Passing rent $<$ market rent, will revert to market rent in 2 years
+					 	- $ \small 10,000 \times 1.05^3 = 11,576 $
+					* CF in term are certain, reversion not. Adjust discount rate to reflect that? 3.75% for term, 4.25% for reversion?
+					<table>
+						<tr>
+								<td>Year<td>
+								<td>1<td>
+								<td>2<td>
+								<td>3<td>
+								<td>...<td>
+						</tr>
+						<tr>
+								<td>Rent<td>
+								<td>10,000<td>
+								<td>10,000<td>
+								<td>11,576<td>
+								<td>...<td>
+						</tr>
+						<tr>
+								<td>Discount at<td>
+								<td>3.75%<td>
+								<td>3.75%<td>
+								<td>4.25%<td>
+								<td>...<td>
+						</tr>
+
+					</table>
+
+
+					</textarea>
+				</section>
+
+
+
+				<section data-background-image="imgs/rent_ledger.jpg">
+					<h2><span class="transparent70">3. Cost-based Valuation</span></h2>
+					<h3><span class="transparent70"><br/>Accountants to the rescue!</span></h3>
+				</section>
+
+				<section data-markdown >
+					<textarea data-template>
+					## Net Asset Value<span class="subtitle"><br/>An accountant's view of value.</span>
+					* For companies, the equity holders own the residual value
+						- The value of all assets less value of the debt
+						- Less any other stakeholder claims (e.g. tax)
+						- Less any costs of disposal
+					* This is the Net Asset Value (NAV) of the firm
+						- Shouldn’t NAV per share be the share price?
+						- What would happen if it weren’t?
+					* Luckily, property companies/REITs have a high percentage of fixed tangible assets, so NAV should be easy to calculate?
+
+					</textarea>
+				</section>
+
+								<section data-markdown >
+									<textarea data-template>
+									## Simplified example<span class="subtitle"><br/>NAV and property companies (adapted from Brett, "Property and Money")</span>
+									<div class="figure">
+										<img src="imgs/nav.png" height=450>
+									</div>
+									</textarea>
+								</section>
+
+								<section data-markdown >
+									<textarea data-template>
+									## NAV discounts: UK <span class="subtitle"><br/>Historically, UK property companies have traded at NAV discount.</span>
+									* Discount (Premium) = (Price - NAV) / NAV
+										- e.g. NAV = 300, Price = 225: (225-300)/300 = -25%<br>
+									<img src="imgs/nav_uk.png" height=430>
+									</textarea>
+								</section>
+
+								<section data-markdown >
+									<textarea data-template>
+									## Caused by smoothness?<span class="subtitle"><br/>NAV: Always one step behind? And smooth!</span>
+									* Can this explain structural NAV discounts? No.
+
+									<img src="imgs/nav_indices.png" height=430>
+									</textarea>
+								</section>
+
+								<section data-markdown >
+									<textarea data-template>
+									## Potential causes<span class="subtitle"><br/>We do not have a good explanation, yet.</span>
+									* What could lead to these deviations?
+										- Tax - particularly capital gains tax - liability (but REITs do not pay tax)
+										- Uncertainty as to true NAV
+										- Minority holdings & control, management costs
+										- Liquidity and loss on forced sale
+										- Risk: gearing and volatility; innovative capital structure
+										- Pricing inefficiencies? Is the market off?
+									</textarea>
+								</section>
+
+								<section data-markdown >
+									<textarea data-template>
+									## Geographic diversity<span class="subtitle"><br/>NAV discounts/premia in Europe</span>
+									* Is this a regulation story? Or valuation differences?
+
+									<img src="imgs/nav_countries.png" height=430>
+									</textarea>
+								</section>
+
+								<section data-markdown >
+									<textarea data-template>
+									## Time Dynamics<span class="subtitle"><br/>Shared turning points and trends. Distinct country-specific trends.</span>
+									* Ranking by NAV discount not constant.
+
+									<img src="imgs/nav_spaghetti.png" height=430>
+									</textarea>
+								</section>
+
+
+								<section data-markdown >
+									<textarea data-template>
+									## Residual Method<span class="subtitle"><br/>Land value, based on costs</span>
+
+									* Properties are sold as a bundle: Negotiated price is for both land and structure.
+									* In cities, undeveloped land is rarely sold.
+									* How much is land worth?
+									* Cost based approach: Land is the residual, transaction price &minus; replacement value of structure
+
+									* Pro: Easy to explain and to implement (if you have cost data).
+									* Con: Cost based, theoretical challenges (<a href="https://link.springer.com/article/10.1007/s11146-021-09834-4">Clapp, Cohen & Lindenthal, 2021</a>), negative land values possible...
+
+									</textarea>
+								</section>
+
+
+
+				<section data-markdown >
+					<textarea data-template>
+						## Discussion<span class="subtitle"><br/><span>
+
+						1. Buy land, they don't make it anymore.
+						2. Property markets will evolve due to technological and financial innovations. Real estate will resemble stocks and bonds more closely. Asset values will improve.
+
+					</textarea>
+				</section>
+
+				<section data-markdown >
+					<textarea data-template>
+						## Real Estate Seminars<span class="subtitle"><br/>The newest research! Open to all.</span>
+
+						* Cambridge Real Estate Seminars
+							- https://seminar.re
+						* American Real Estate and Urban Economics Association (AREUEA) Virtual Seminars
+							- https://www.areuea.org/virtual-seminar-series
+
+					</textarea>
+				</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				transition: 'none',
+				width: 1244,
+				height: 700,
+				margin: 0.1,
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					// pass other options into `MathJax.Hub.Config()`
+					TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>
